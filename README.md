@@ -4,7 +4,7 @@ bally 的補充學習素材：中文導讀、英文導讀、詞彙對照、情�
 
 ## 下載與觀看
 
-- [公開下載版本](../../releases)：每個 ZIP 包含 MP4、SRT/VTT 字幕、段落時間、詞表及來源授權。
+- [公開下載版本](https://github.com/bally65/course-learning-videos/releases/tag/v2026.10.19-vocab)：每個 ZIP 包含 MP4、SRT/VTT 字幕、段落時間、詞表及來源授權。
 - [YouTube 頻道](https://www.youtube.com/channel/UCqHmPyl4dRExH1pTBeMuqBA)：影片會在完成驗證、平台允許上傳後發布；下載成品不等於已在 YouTube 公開。
 
 英文及日文各 3000 字，依 1–1500、1501–3000 分卷，每卷有中文與英文導讀。日文單字保留日語發音；中文／英文是釋義導讀語言。六科、Exam 及化學詞彙另按單元整理。
