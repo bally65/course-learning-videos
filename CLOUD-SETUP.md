@@ -1,6 +1,6 @@
 # 關機後接續上傳課程影片
 
-目前是準備完成前的工作區；尚未把 YouTube 權限交給雲端、尚未啟用自動上傳。
+這個倉庫保存雲端上傳流程。實際開關見 cloud-queue.json，逐支進度見 cloud-state.json；API 公開回讀與實際播放驗收分開記錄。
 
 ## 已凍結範圍
 
@@ -8,7 +8,7 @@
 
 ## 電腦可以何時關機
 
-完整成品已傳到 GitHub Release、Google 頻道已完成授權、GitHub 雲端的一支試傳確認成功，且本機舊排程已停用後，剩下工作才不再依賴這台電腦。現在本機排程仍是備用，不能把準備檔當作已接通。
+完整成品傳到 GitHub Release、Google 頻道完成授權並通過雲端連線驗證、首輪雲端執行留下可核對紀錄，而且本機舊排程停用後，剩下工作就不再依賴這台電腦。首輪若遇到明確的 YouTube 每日上限，保留待重試狀態；這不代表第一支影片已成功公開。
 
 ## 雲端流程
 
@@ -20,7 +20,7 @@ GitHub 標準 Ubuntu hosted runner → 讀取固定工作清單及進度 → 驗
 
 ## 一次性授權與啟用
 
-1. Google Cloud 的專用 OAuth 應用程式啟用 YouTube Data API。採適合部署平台的 OAuth client，使用者透過 Google 官方授權畫面授權本人頻道。External Testing 的 YouTube refresh token 會在七天後失效；要長期執行需確認適當的發布狀態。
+1. 在 Google Cloud 為專用 OAuth 用戶端啟用 YouTube Data API。採適合部署平台的 OAuth client，使用者透過 Google 官方授權畫面授權本人頻道。External Testing 的 YouTube refresh token 會在七天後失效；要長期執行需確認適當的發布狀態。
 2. 完整流程所需的單一 scope 是 `youtube.force-ssl`。Google 對此權限的文字包含查看、編輯與刪除 YouTube 內容；本程式只實作列舉、上傳、字幕和本清單影片的公開設定，沒有刪除端點。授權會新增雲端持續存取頻道的能力，需要本人確認一次。
 3. 僅將 OAuth client ID、client secret、refresh token 存入本倉庫的 GitHub Actions Secrets，名稱是 YOUTUBE_CLIENT_ID、YOUTUBE_CLIENT_SECRET、YOUTUBE_REFRESH_TOKEN。不得放入 Git、雲端公開進度、日誌或對話；不使用瀏覽器 Cookie。
 4. 上傳 SHA 相符的成品到同倉庫 Release；先跑 dry-run 和唯讀 preflight，確認頻道 ID。接著啟用 queue.enabled 與 YOUTUBE_CLOUD_ENABLED，首次最多一支。沒有實際通過這步就不宣布雲端可用。
