@@ -1,0 +1,149 @@
+{
+  "schema_version": 1,
+  "channel_id": "UCqHmPyl4dRExH1pTBeMuqBA",
+  "repository": "bally65/course-learning-videos",
+  "queue_sha256": "570822e5a4d09e48de1cddb53f5e75c654158c44b94c2dfeac6b50ce5e45b63a",
+  "all_done": false,
+  "jobs": {
+    "c04-review-vol01-zh": {
+      "fingerprint": "163f506def7458741609d2c256854fa4f1010c4bbd751b6e5fdc82de072a4c32",
+      "stable_tag": "course-cloud-b129bcc7aa20bf52fb3c0a98b548f23ad6a887c6",
+      "phase": "pending"
+    },
+    "c04-review-vol01-en": {
+      "fingerprint": "7f80c55429793f36a9f1aa5256d348397d7aa2220aa918bfd87842226830f0dc",
+      "stable_tag": "course-cloud-b587b1f39426595c61f9a7b4fd864cccd90844ef",
+      "phase": "pending"
+    },
+    "c05-review-vol01-zh": {
+      "fingerprint": "6cbed1ecb3331823d52991235fcc1c7563faf42615875c5205efc357c8664d6f",
+      "stable_tag": "course-cloud-b0c1777e6e43ce6f03d23723ae7ccbd11899f028",
+      "phase": "pending"
+    },
+    "c05-review-vol01-en": {
+      "fingerprint": "11b5acf33c55ede8c5b9dd8d8242f29e5c34d077d0225c8e2f9b5a283c6a66ed",
+      "stable_tag": "course-cloud-7beb0bc7d6956a3e63e99bb61c4a1450009200bc",
+      "phase": "pending"
+    },
+    "c06-review-vol01-zh": {
+      "fingerprint": "4c795b68214da8efa99cd2f4776e950f4155b8778674d73b8f2f2be9e0639cff",
+      "stable_tag": "course-cloud-77e4aa9bed2dd299e525ea9354ef63949c0bf12c",
+      "phase": "pending"
+    },
+    "c06-review-vol01-en": {
+      "fingerprint": "4915bea71f3cf2feae52c50059ee3b348cd22d0f42554f9e0f03ef2568c8904b",
+      "stable_tag": "course-cloud-3b3151a7946c39455dde200f2a5d7da00acb1dae",
+      "phase": "pending"
+    },
+    "visual-review-vol01-zh": {
+      "fingerprint": "28ab7f9558f59d55bab50278aa5ad8ed659029df1b2dea6718fbac1611863d1e",
+      "stable_tag": "course-cloud-cd9ce117099da1242b6904635535c4377056ee58",
+      "phase": "pending"
+    },
+    "visual-review-vol01-en": {
+      "fingerprint": "d401dc4a5d57efb7cacfd95b447c5d2b5c7bc97492f40edf599603f645053c5a",
+      "stable_tag": "course-cloud-9c4f5c86394f571f049b04f7fd4b579ed149f63e",
+      "phase": "pending"
+    },
+    "course-terms-review-vol01-zh": {
+      "fingerprint": "46323e358af31db56b2aae7e6eb7ecc241c4e8636fa63aed8ea45d00b3255266",
+      "stable_tag": "course-cloud-288c071bdc079cd5fa26b805d0a90c19020b5b21",
+      "phase": "pending"
+    },
+    "course-terms-review-vol01-en": {
+      "fingerprint": "d69f4246ec12a694f91dc6139c9843720cc88b02dc2eda4845051113f1a54e35",
+      "stable_tag": "course-cloud-7619dcc879163e471df1d9ba64c8d4154ab049c4",
+      "phase": "pending"
+    },
+    "vocab-inorganic-vol1-zh": {
+      "fingerprint": "016d8e21cb207fdbb1b872255cdfe358782718dc6ed2744048d47afcf16d96f2",
+      "stable_tag": "course-cloud-f10302061d9d14825e7add31912b5a5174b3e0c6",
+      "phase": "pending"
+    },
+    "vocab-instrument-vol1-zh": {
+      "fingerprint": "332f1dd9d955a2b7054b95ed0d7515b682bc0ac54a838060d4566b3e43f1552e",
+      "stable_tag": "course-cloud-5e060b08f195a8da5441f49a7d11c8031e1703a4",
+      "phase": "pending"
+    },
+    "vocab-inorganic-vol1-en": {
+      "fingerprint": "ba9bbe7a84350bfc35bed0434c18bc733f45d1f6b64fe9ab86fccce384691ee3",
+      "stable_tag": "course-cloud-be8ccab5c67674ff9735c085cdbd3a22aacdf9a4",
+      "phase": "pending"
+    },
+    "vocab-instrument-vol1-en": {
+      "fingerprint": "fd52a6d773153c2edbf66a50f01105ca7fd6f7f71a46e67c1178020721beb1ee",
+      "stable_tag": "course-cloud-4b518600dd671032630b8f4e192df5cd9032aa69",
+      "phase": "pending"
+    },
+    "vocab-inorganic-vol2-zh": {
+      "fingerprint": "068b6bb2eb8a4c58e516e3ae4b6395fbf27a199d438dff355a84d5e214dfd3e5",
+      "stable_tag": "course-cloud-d61f8092e3331f22aeb581b63eaeee7880b1655a",
+      "phase": "pending"
+    },
+    "vocab-instrument-vol2-zh": {
+      "fingerprint": "ab7cdc690a806d22b0e3e5439f2b41a99cbd5854a4410e8b986b34afd0472954",
+      "stable_tag": "course-cloud-0f0e1f13ad1232a97c570452803957d3f6394657",
+      "phase": "pending"
+    },
+    "vocab-inorganic-vol2-en": {
+      "fingerprint": "e88f27cb0cd1ac57ee37dacd1cabacc732ba4c1d035667c548f52541ac27b907",
+      "stable_tag": "course-cloud-d3f1470cd168d641681a1a4730cf9804707d46ab",
+      "phase": "pending"
+    },
+    "vocab-instrument-vol2-en": {
+      "fingerprint": "2d28bc3ae8d63ce9b9639e090640937c1ad0d3aa8c287a98ff2f1531ad3e17bc",
+      "stable_tag": "course-cloud-2a0184b9e20c61c92af77f5da970200f82e76f59",
+      "phase": "pending"
+    },
+    "english-3000-vol1-zh": {
+      "fingerprint": "3ad95ff3e80cce8ae32bcabe4546f619403677d980e276c8033c19d62bd7a69e",
+      "stable_tag": "course-cloud-b499f4a96b6394733b4e3932fbc9367376b1a4d9",
+      "phase": "pending"
+    },
+    "english-3000-vol1-en": {
+      "fingerprint": "497c57e966c4bcd0c2ff42374700d0aaf15517d6e8559eba7211d9d8cf2e2c79",
+      "stable_tag": "course-cloud-4c2f01af7458748769b6b58e4a47aed85d4a9fa9",
+      "phase": "pending"
+    },
+    "english-3000-vol2-zh": {
+      "fingerprint": "7be07e0ca4fdf631c268353c19489bd8707ac5d8e373adc385ab5b0acbe07996",
+      "stable_tag": "course-cloud-fcf62b8d9ddbd64b350d199e127294a48ac26156",
+      "phase": "pending"
+    },
+    "english-3000-vol2-en": {
+      "fingerprint": "6e3dce3f364f1af3d8932419b4dc942a0a0bed9cd30fba4a05dce61f1bbd8e3a",
+      "stable_tag": "course-cloud-23de985faaa0de1cff14c579eb01142ed20d32cd",
+      "phase": "pending"
+    },
+    "japanese-3000-vol1-zh": {
+      "fingerprint": "93ee1cc623ff44927253749a94377aa900e520021d4dcbbb87aee2cd5ccece87",
+      "stable_tag": "course-cloud-6af2b69c6d6aa3d44cb1b1d0cfbbbe2905350352",
+      "phase": "pending"
+    },
+    "japanese-3000-vol1-en": {
+      "fingerprint": "82f0b8acee11e3655facb8515d06b005d287d2acc8ffa52b2fb30571e0e6fb9a",
+      "stable_tag": "course-cloud-2965c622ff8f696caaece6dba8f51c4bc29a587c",
+      "phase": "pending"
+    },
+    "japanese-3000-vol2-zh": {
+      "fingerprint": "78ac2cb6e3a2caf42410dbedbe7411cf16cda1de6cfc83613cc680848c6401ed",
+      "stable_tag": "course-cloud-f8b88309850536c060e02bd314ac4a5079592413",
+      "phase": "pending"
+    },
+    "japanese-3000-vol2-en": {
+      "fingerprint": "8aa63c22a9fef3d451ed8cd64c6257ec5af3ba64dd1169e27ecfba6dc9782a90",
+      "stable_tag": "course-cloud-1934f0c9e3e2c3d0323fce38ae8ae19fa5da1402",
+      "phase": "pending"
+    },
+    "vocabulary-guide-zh": {
+      "fingerprint": "e50212792c98fead6fecb798939022d0b379fc4fac64e1f1741e4c71ec327e1c",
+      "stable_tag": "course-cloud-2df407d0da0c95b3a727fcd41ebf2eb3e65f0a32",
+      "phase": "pending"
+    },
+    "vocabulary-guide-en": {
+      "fingerprint": "03ce41e4fbfa41200d3532a799e1378039ba9aee98c36e8d6eb4e0ec3489001c",
+      "stable_tag": "course-cloud-9f8a257112e27f788aeaf1a060698eedfb9af186",
+      "phase": "pending"
+    }
+  }
+}
