@@ -2,7 +2,7 @@
   "schema_version": 1,
   "repository": "bally65/course-learning-videos",
   "channel_id": "UCqHmPyl4dRExH1pTBeMuqBA",
-  "enabled": false,
+  "enabled": true,
   "initial_published_job_ids": [
     "exam-review-vol01-zh",
     "exam-review-vol01-en",
