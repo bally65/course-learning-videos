@@ -1,0 +1,50 @@
+name: Course video cloud upload
+on:
+  workflow_dispatch:
+    inputs:
+      mode:
+        description: Validation or authorized upload
+        type: choice
+        default: dry-run
+        options: [dry-run, preflight, execute]
+  schedule:
+    - cron: '17 15 * * *'
+permissions:
+  contents: read
+concurrency:
+  group: course-youtube-uploader
+  cancel-in-progress: false
+jobs:
+  validate:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262
+        with:
+          persist-credentials: false
+      - run: python3 -m unittest -v test_cloud_upload
+      - run: python3 cloud_upload.py --dry-run
+  upload:
+    needs: validate
+    if: vars.YOUTUBE_CLOUD_ENABLED == 'true' && (github.event_name == 'schedule' || inputs.mode == 'preflight' || inputs.mode == 'execute')
+    runs-on: ubuntu-24.04
+    timeout-minutes: 90
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262
+        with:
+          persist-credentials: false
+      - name: Run bounded uploader
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          YOUTUBE_CLIENT_ID: ${{ secrets.YOUTUBE_CLIENT_ID }}
+          YOUTUBE_CLIENT_SECRET: ${{ secrets.YOUTUBE_CLIENT_SECRET }}
+          YOUTUBE_REFRESH_TOKEN: ${{ secrets.YOUTUBE_REFRESH_TOKEN }}
+          REQUESTED_MODE: ${{ github.event_name == 'schedule' && 'execute' || inputs.mode }}
+        run: |
+          if [ "$REQUESTED_MODE" = "preflight" ]; then
+            python3 cloud_upload.py --preflight
+          else
+            python3 cloud_upload.py --execute
+          fi
